@@ -1,0 +1,160 @@
+*{
+  font-size: 1.2rem;
+  font-family: monospace;
+}
+
+:root{
+  --cor-primaria: beige;
+  --cor-segundaria: bisque;
+  --cor-fundo: black;
+}
+
+html{
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  background: var(--cor-fundo);
+  color: var(--cor-primaria);
+
+
+}
+
+.todoOCorpo{
+  border: 2px solid;
+  margin: 20px;
+  padding: 0px 50px 50px 50px;
+}
+
+h1{
+  color: var(--cor-segundaria);
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  text-align: center;
+}
+h2{
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+label{
+  color: var(--cor-primaria);
+  display: block;
+  margin: 10px 0px;
+}
+
+.cep{
+  grid-column: 1/-1;
+}
+
+.endereco{
+  grid-column: 1/-1;
+}
+input{
+  display: block;
+  margin-top: 5px;
+}
+input:focus{
+outline: none;
+}
+
+.btn, .proxima{
+  margin-top: 15px;
+  width: max-content;
+  border-radius: 5px;
+  border: none;
+}
+.btn:active , .proxima:active{
+  font-size: 1.1rem;
+}
+
+.resultadoCEP{
+  margin-top: 30px;
+  color: var(--cor-primaria);
+  max-width: 40ch;
+}
+
+.enderecoAchado{
+  border: 2px dotted;
+  margin: 20px;
+  padding: 0px 20px;
+}
+
+.btcDiv{
+  border: 2px dotted;
+  margin: 20px;
+  padding: 0px 20px;
+} 
+
+
+.chuckNorrisPiada{
+  display: flex;
+  flex-direction: column;
+  border: 2px dotted ;
+  padding: 0px 20px;
+  align-items: center;
+}
+.piada{
+  grid-column: 1/-1;
+  max-width: 40ch;
+  text-align: center;
+}
+.proxima{
+  padding: 5px;
+  margin: 20px 0px;
+  }
+
+  @media (max-width: 500px){
+    .todoOCorpo{
+      border: none;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    *{
+      font-size: 1rem;
+    }
+
+    html{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    h1{
+      display: block;
+      font-size: 1.5rem;
+    }
+
+    h2{
+      font-size: 1.3rem;
+      max-width: 10ch;
+    }
+    
+    .resultadoCEP{
+      display: block;
+      max-width: max-content;
+    }
+
+    .enderecoAchado{
+      margin: 10px;
+      padding: 5px;
+      border: none;
+    }
+    .btcDiv{
+      border: none;
+      margin: 0px;
+    }
+
+    .chuckNorrisPiada{
+      display: flex;
+      flex-direction: column;
+      border: none;
+      align-items: flex-start;
+    }
+
+    .piada{
+      text-align: left;
+      max-width: 30ch;
+    }
+    
+  }

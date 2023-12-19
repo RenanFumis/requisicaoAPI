@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./img/api.png" type="image/x-icon">
+  <title>Acessando API</title>
+</head>
+
+<body class="todoOCorpo">
+  <h1>Requisição via API</h1>
+
+  <div class="enderecoAchado">
+    <h2>Busca de Endereço</h2>
+    <form id="buscaCep">
+
+      <label for="cep">CEP:</label>
+      <input type="text" name="cep" id="cep">
+
+      <input type="button" value="Buscar Cep" class="btn" id="btn">
+    </form>
+
+    <div class="resultadoCEP" id="resultadoCEP">
+
+    </div>
+  </div>
+
+  <div class="btcDiv">
+    <h2>Verificaçao do Preço do Bitcoin</h2>
+    <p>Valor do Bitcoin hoje:</p>
+    <p class="btc"></p>
+  </div>
+
+
+
+  <div class="chuckNorrisPiada">
+    <h2>Piadas aleatórias do Chuck Norris</h2>
+
+
+    <p class="piada"></p>
+    <button class="proxima">Proxima</button>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
